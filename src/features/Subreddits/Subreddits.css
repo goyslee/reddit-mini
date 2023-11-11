@@ -39,7 +39,6 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition added */
 }
 
-
 .selected-subreddit button {
   background: var(--color-dark-purple);
   color: var(--color-sky-blue);
