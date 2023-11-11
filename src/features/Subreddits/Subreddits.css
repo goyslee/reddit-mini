@@ -1,36 +1,57 @@
-.subreddit-card {
-  padding-right: var(--spacing-2);
+:root {
+  --color-dark-purple: #363062;
+  --color-midnight-blue: #435585;
+  --color-light-blue: #818FB4;
+  --color-cream: #F5E8C7;
+  --color-deep-teal: #164863;
+  --color-sea-blue: #427D9D;
+  --color-sky-blue: #9BBEC8;
+  --color-pale-blue: #DDF2FD;
 }
 
+.subreddit-card {
+  background-color: var(--color-dark-purple);
+  border-radius: var(--radius);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color-cream);
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+
 .subreddit-card h2 {
-  margin-top: 0;
-  color: var(--color-text-header);
+  color: var(--color-light-blue);
 }
 
 .subreddit-card button {
-  background: none;
+  background: var(--color-midnight-blue);
+  margin-bottom: 3%;
   border: none;
+  color: var(--color-cream);
   display: flex;
   align-items: center;
-  color: var(--color-text-body);
   font-weight: 600;
   cursor: pointer;
   width: 100%;
   padding: var(--spacing-2);
   border-radius: var(--radius);
+  box-shadow: 8px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition added */
 }
+
 
 .selected-subreddit button {
-  color: var(--color-branding) !important;
-}
-
-.selected-subreddit {
-  border-left: 5px solid var(--color-branding);
-  background: var(--color-branding-transparent);
+  background: var(--color-dark-purple);
+  color: var(--color-sky-blue);
+  /* border: 2px solid #fff; */
+  box-shadow: 8px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow */
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .subreddit-card button:hover {
-  background: var(--color-on-hover);
+  background: var(--color-light-blue);
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25); /* Adds a larger shadow on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition enhanced */
 }
 
 .subreddits-list {
@@ -43,4 +64,7 @@
   width: 25px;
   border-radius: 50%;
   margin-right: var(--spacing-1);
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.3); /* Adds shadow */
+   transition: box-shadow 0.3s ease; /* Transition added */
 }
+
